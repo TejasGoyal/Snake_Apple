@@ -17,15 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let interval = 1000;
     let count = 0;    
 
- 
-
-
     currentSnake.forEach(addBody) ; // no need of quotes to call the function
     function addBody(index){
        boxes[index].classList.add("snake");
    }            //could have simply used a for loop also, but forEach function takes index automatically
-
-  
 
     function controls(keyIn){
       //  boxes[currentTail].classList.remove("snake");
@@ -49,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("direction"+direction) ;   
           
     }
-
     
     function exchangeHT(){
         console.log(currentSnake)
@@ -84,16 +78,3 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(exchangeHT, interval);
     
 })
-
-
-
-
-//snake breaks
-//does not move automatically
-    //tried combinaing function
-    //tried flag
-    //but i need direction to show the upcoming state not the latest state
-    //added direction
-    //added newHead update function in exchange, so it this knows the new value when called after interval
-
-// add speed up timer
