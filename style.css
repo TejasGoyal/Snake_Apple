@@ -14,8 +14,6 @@ color: teal;
     z-index: +1;
 }
 
-
-
 .grid{
     display: flex;
     border: 3px solid;
@@ -30,11 +28,13 @@ height: 20px;
 width: 20px;
 border: 1px solid white;
 
-/*adding background color overrides apple and snake color, so use z index*/
+
 }
 
 .apple{
     height: 20px;
     width: 20px;
     background-color: tomato;
+    
 }
+
